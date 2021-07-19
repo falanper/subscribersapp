@@ -14,7 +14,8 @@
         android:id="@+id/input_layout_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/petrol"
+        app:boxBackgroundColor="@color/light_rose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,7 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/subscriber_name_hint"
-            android:inputType="textCapSentences" />
+            android:inputType="textCapSentences"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -32,8 +35,9 @@
         android:id="@+id/input_layout_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:boxBackgroundColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/petrol"
+        app:boxBackgroundColor="@color/light_rose"
         app:layout_constraintEnd_toEndOf="@id/input_layout_name"
         app:layout_constraintStart_toStartOf="@id/input_layout_name"
         app:layout_constraintTop_toBottomOf="@id/input_layout_name">
@@ -43,7 +47,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/subscriber_email_hint"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,7 +56,7 @@
         android:id="@+id/button_subscriber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="@string/subscriber_button"
         app:layout_constraintEnd_toEndOf="@id/input_layout_email"
         app:layout_constraintStart_toStartOf="@id/input_layout_email"
@@ -62,7 +67,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@android:color/holo_red_dark"
+        android:background="@drawable/rounded_button"
         android:text="@string/subscriber_button_delete"
         android:textColor="@android:color/white"
         android:visibility="gone"
